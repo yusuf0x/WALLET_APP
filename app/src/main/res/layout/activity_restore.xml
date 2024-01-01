@@ -10,28 +10,28 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/ref"
-        android:layout_width="238dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/fontres"
-        android:textSize="20dp" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:id="@+id/rechercheref"
+            <EditText
+                android:id="@+id/ref"
+                android:layout_width="238dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/fontres"
+                android:textSize="20dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/rechercheref"
 
-        android:layout_height="wrap_content"
-        android:text="Recherce"/>
-</LinearLayout>
+                android:layout_height="wrap_content"
+                android:text="Recherce"/>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -133,8 +133,8 @@
 
 
 
-        <!-- TODO: Update blank fragment layout -->
+    <!-- TODO: Update blank fragment layout -->
 
 
-    </FrameLayout>
+</FrameLayout>
 

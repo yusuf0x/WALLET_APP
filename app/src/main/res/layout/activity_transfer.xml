@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.Bank_wallet.Transfert">
+    tools:context=".TransferActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -111,14 +111,14 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/fontres"
             android:text="motif:"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/motif4"
             android:layout_width="83dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/fontres"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/checkBox"
