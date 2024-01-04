@@ -5,11 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HistoryActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <SearchView
             android:id="@+id/action_search"
@@ -19,21 +23,20 @@
             android:layout_marginTop="15dp"
             android:icon="@drawable/ic_baseline_search_24"
             android:queryHint="Search Here"
-            android:title="Search"
-
-
-            tools:ignore="MissingConstraints" />
+            android:title="Search" />
 
         <TableLayout
-
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="600dp"
             android:stretchColumns="1,2,3"
-            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="64dp">
+            tools:layout_editor_absoluteY="64dp"
+            android:background="@drawable/table_background"
 
-            <TableRow>
+            >
+            <TableRow
+                android:background="#ECECEC"
+                >
 
                 <TextView
                     android:layout_column="1"
@@ -42,8 +45,9 @@
                     android:gravity="center"
                     android:padding="10dp"
                     android:text="Ref"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"/>
 
                 <TextView
                     android:layout_column="2"
@@ -51,25 +55,27 @@
                     android:gravity="center"
                     android:padding="10dp"
                     android:text="Nom"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
 
                 <TextView
                     android:layout_column="3"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
                     android:fontFamily="@font/fontres"
                     android:gravity="center"
                     android:padding="10dp"
                     android:text="Payement"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
             </TableRow>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"
-                android:layout_margin="15dp"
                 android:layout_width="380dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_margin="15dp" />
         </TableLayout>
     </LinearLayout>
 

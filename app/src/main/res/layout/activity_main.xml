@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".HomeActivity">
+    tools:context=".MainActivity">
 
     <!--
 
@@ -207,45 +206,49 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:text="Title :"
             android:fontFamily="@font/fontres"
-            android:textSize="30dp" />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/firstname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/fontres"
-
-            android:textSize="30dp" />
+            android:text="First Name :"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/lastname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/fontres"
-            android:textSize="30dp" />
+            android:text="Last Name :"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/fontres"
-            android:textSize="30dp" />
+            android:text="Phone :"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/cardid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/fontres"
-            android:textSize="30dp" />
+            android:text="Card ID :"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/adress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/fontres"
-            android:textSize="30dp" />
+            android:text="Addreess :"
+            android:textSize="30sp" />
     </LinearLayout>
 
     <LinearLayout

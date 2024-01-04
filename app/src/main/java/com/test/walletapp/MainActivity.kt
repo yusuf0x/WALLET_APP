@@ -56,18 +56,15 @@ class MainActivity : AppCompatActivity() {
         binding.Transfert.setOnClickListener {
             val intent = Intent(this, TransferActivity::class.java)
             startActivity(intent)
-//            finish()
         }
         binding.Historique.setOnClickListener {
             val intent = Intent(this, HistoryActivity::class.java)
             startActivity(intent)
-//            finish()
 
         }
         binding.restitution.setOnClickListener {
             val intent = Intent(this, RestoreActivity::class.java)
             startActivity(intent)
-//            finish()
         }
         viewModel.getClient(1)
 
