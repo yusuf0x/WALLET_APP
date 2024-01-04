@@ -1,12 +1,17 @@
 package com.test.walletapp.network
 
+import com.test.walletapp.model.AuthenticationDTO
+import com.test.walletapp.model.AuthenticationTokenDTO
 import com.test.walletapp.model.Client
 import com.test.walletapp.model.MultiTransfer
 import com.test.walletapp.model.SpinnerModel
 import kotlinx.coroutines.flow.Flow
 
 interface ApiHelper {
-    
+
+
+    fun postEmail(body: AuthenticationDTO?): Flow<AuthenticationTokenDTO?>
+
     fun getClient(id: Int?): Flow<Client?>
 
     

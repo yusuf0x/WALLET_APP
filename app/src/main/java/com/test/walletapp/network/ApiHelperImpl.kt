@@ -1,5 +1,7 @@
 package com.test.walletapp.network
 
+import com.test.walletapp.model.AuthenticationDTO
+import com.test.walletapp.model.AuthenticationTokenDTO
 import com.test.walletapp.model.Client
 import com.test.walletapp.model.MultiTransfer
 import com.test.walletapp.model.SpinnerModel
@@ -7,6 +9,11 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
 class ApiHelperImpl(private  val apiService: ApiService) : ApiHelper {
+    override fun postEmail(body: AuthenticationDTO?) = flow {
+        val response = apiService.postemail(body)
+        emit(response)
+    }
+
     override fun getClient(id: Int?) =   flow {
        emit(apiService.getclient(id))
     }

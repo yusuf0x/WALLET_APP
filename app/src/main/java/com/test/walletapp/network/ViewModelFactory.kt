@@ -2,6 +2,7 @@ package com.test.walletapp.network
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.test.walletapp.network.viewmodels.LoginViewModel
 
 
 class ViewModelFactory(
@@ -10,8 +11,8 @@ class ViewModelFactory(
 
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(NetworkCallViewModel::class.java)) {
-            return NetworkCallViewModel(apiHelper) as T
+        if (modelClass.isAssignableFrom(LoginViewModel::class.java)) {
+            return LoginViewModel(apiHelper) as T
         }
 //        if (modelClass.isAssignableFrom(SeriesNetworkCallsViewModel::class.java)) {
 //            return SeriesNetworkCallsViewModel(apiHelper, dbHelper, dispatcherProvider) as T
