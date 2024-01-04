@@ -3,6 +3,7 @@ package com.test.walletapp.network
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.test.walletapp.network.viewmodels.LoginViewModel
+import com.test.walletapp.network.viewmodels.MainViewModel
 
 
 class ViewModelFactory(
@@ -14,9 +15,9 @@ class ViewModelFactory(
         if (modelClass.isAssignableFrom(LoginViewModel::class.java)) {
             return LoginViewModel(apiHelper) as T
         }
-//        if (modelClass.isAssignableFrom(SeriesNetworkCallsViewModel::class.java)) {
-//            return SeriesNetworkCallsViewModel(apiHelper, dbHelper, dispatcherProvider) as T
-//        }
+        if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
+            return MainViewModel(apiHelper) as T
+        }
 //        if (modelClass.isAssignableFrom(ParallelNetworkCallsViewModel::class.java)) {
 //            return ParallelNetworkCallsViewModel(apiHelper, dbHelper, dispatcherProvider) as T
 //        }
